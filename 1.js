@@ -79,7 +79,7 @@ window.onload = function () {
                 }
             }
 
-            xmlhttp.open("GET", "https://phpfuncs.b1anks.cn/getData", true);
+            xmlhttp.open("GET", "http://127.0.0.1:5000/getData", true);
             xmlhttp.send();
         }
 
@@ -115,6 +115,6 @@ function search(flag='search'){
                 offset = 0;
             }
             var params = 'where=' + where + '&like=' + like + '&offset=' + offset;
-            xmlhttp.open("GET", "https://phpfuncs.b1anks.cn/getData?" + params, true);
+            xmlhttp.open("GET", "http://127.0.0.1:5000/getData?" + params, true);
             xmlhttp.send();
         }
